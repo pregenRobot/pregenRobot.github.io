@@ -50,7 +50,7 @@ function scrollToRGB(height){
     var offset = height%gap;
     
     var new_colors = start.map(function(item, index) {
-        return parseFloat(item) - delta_incr[index];
+        return parseFloat(item) - delta_incr[index]*offset;
     });
 
     start = new_colors;
