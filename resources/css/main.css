@@ -7,3 +7,18 @@ body {
   background-image: url("../images/jumbotron_bg.jpg");
   background-size: cover;
 }
+
+
+.navbar-gradient {
+  background-image: linear-gradient(to right, rgba(157,244,245,100), rgba(245, 179, 157, 100))
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
