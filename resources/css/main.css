@@ -14,7 +14,6 @@ body {
 }
 
 .zoom {
-  padding: 50px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
 }
