@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .jumbotron {
   background-image: url("../images/jumbotron_bg.jpg");
@@ -10,12 +14,14 @@ body {
 
 
 .navbar-gradient {
-  background-image: linear-gradient(to right, rgba(157,244,245,100), rgba(245, 179, 157, 100))
+  background-image: linear-gradient(to right, rgba(157,244,245,100), rgba(245, 179, 157, 100));
+  padding-top: 425;
+  padding-bottom: 25;
 }
 
 .zoom {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
 }

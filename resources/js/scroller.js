@@ -9,11 +9,14 @@ var rainbow_index;
 var delta;
 var new_color;
 var offset;
+var shift;
+var default_navbar_vertical_padding = 25; 
 
 $(document).ready(function() {
     document_ready = true;
     rainbow_colors = [[157,244,245,100],[255,244,220,100], [245,157,185,100],[220,255,254,100], [245,244,157,100], [255,220,220,100], [157,172,245,100]];
     gap = parseFloat(document.body.scrollHeight) / parseFloat(rainbow_colors.length - 1);
+    shift = 400;
 });
 
 $(window).scroll(function() {
@@ -22,7 +25,16 @@ $(window).scroll(function() {
     if(document_ready && height > 0){
         $("#navbar_at_top").css("background-image",scrollToRGB(height));
         // console.log(`rgb(${100/height},${200/height},${300/height})`);
+        if(height < shift ){
+            $("#navbar_at_top").css("padding-top",shift - height + default_navbar_vertical_padding);
+        }else{
+            $("#navbar_at_top").css("padding-top",0 + default_navbar_vertical_padding);
+        }
+    }else{
+        $("#navbar_at_top").css("padding-top",shift + default_navbar_vertical_padding);
     }
+    $("#navbar_at_top").css("padding-bottom",default_navbar_vertical_padding);
+    console.log($("#navbar_at_top").css("padding_top"));
 });
 
 function scrollToRGB(height){
@@ -58,7 +70,7 @@ function scrollToRGB(height){
         rgba(${new_color[0]},${new_color[1]},${new_color[2]},${new_color[3]}),
         rgba(${complement["r"]}, ${complement["g"]}, ${complement["b"]})
        )`; 
-    console.log(message);
+    // console.log(message);
     
     return message 
 }
@@ -82,7 +94,6 @@ function hexToRgb(hex) {
 function rgbComplimentary(r,g,b){
 
     var hex = "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-    console.log(hex);
     var rgb = 'rgb(' + (hex = hex.replace('#', '')).match(new RegExp('(.{' + hex.length/3 + '})', 'g')).map(function(l) { return parseInt(hex.length%2 ? l+l : l, 16); }).join(',') + ')';
 
     // Get array of RGB values
