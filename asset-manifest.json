@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pregenRobot.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/pregenRobot.github.io/static/js/main.59f5282c.chunk.js",
+    "main.js.map": "/pregenRobot.github.io/static/js/main.59f5282c.chunk.js.map",
+    "runtime-main.js": "/pregenRobot.github.io/static/js/runtime-main.273f7e05.js",
+    "runtime-main.js.map": "/pregenRobot.github.io/static/js/runtime-main.273f7e05.js.map",
+    "static/js/2.4778043e.chunk.js": "/pregenRobot.github.io/static/js/2.4778043e.chunk.js",
+    "static/js/2.4778043e.chunk.js.map": "/pregenRobot.github.io/static/js/2.4778043e.chunk.js.map",
+    "index.html": "/pregenRobot.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/pregenRobot.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.4778043e.chunk.js.LICENSE.txt": "/pregenRobot.github.io/static/js/2.4778043e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.273f7e05.js",
+    "static/js/2.4778043e.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.59f5282c.chunk.js"
+  ]
+}
